@@ -33,8 +33,8 @@ var pong = function(num) {
             <!--front end-->
 
 $(document).ready(function() {
-    $("#menu-toggle").click(function(e) {
-        e.preventDefault();
+    $("#menu-toggle").click(function(event) {
+        event.preventDefault();
         $("#wrapper").toggleClass("toggled");
     });
 
