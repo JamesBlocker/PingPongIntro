@@ -38,7 +38,7 @@ $(document).ready(function() {
     $('#form1').submit(function(event) {
         var userInput = $('#userInput').val();
         $('#list').html("");
-        $('#pong').fadeOut();
+        $('#inigo').fadeOut();
         var result = ping(userInput);
 
         $('.output').show();
@@ -48,7 +48,7 @@ $(document).ready(function() {
     $('#form2').submit(function(event) {
         var userInput = $('#userInput2').val();
         $('#list').html("");
-        $('#pong').fadeOut();
+        $('#inigo').fadeOut();
         var result = pong(userInput);
 
         $('.output').show();
