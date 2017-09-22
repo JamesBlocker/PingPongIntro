@@ -10,7 +10,6 @@ var ping = function(num) {
         } else {
             $('#list').append('<li>' + i +'</li>');
         }
-
     }
     return num;
 };

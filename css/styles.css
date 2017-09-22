@@ -29,6 +29,22 @@ body {
   overflow-x: hidden;
 }
 
+#colorRules {
+    color: yellow;
+}
+
+#listRules li{
+    list-style: none;
+}
+
+img {
+    opacity: 0.25;
+    filter: alpha(opacity=525);
+    height: 30%;
+    width: 85%;
+
+}
+
 #wrapper {
   padding-left: 0;
   -webkit-transition: all 0.5s ease;
