@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>Simple Sidebar - Start Bootstrap Template</title>
+
+    <link rel="stylesheet" href="css/bootstrap.css" type="text/css">
+    <link rel="stylesheet" href="css/styles.css" type="text/css">
+    <script src="js/jquery-3.2.1.js"></script>
+    <script src="js/scripts.js"></script>
+</head>
+
+<body>
+
+    <div id="wrapper">
+
+        <!-- Sidebar -->
+        <div id="sidebar-wrapper">
+            <ul class="sidebar-nav">
+                <li class="sidebar-brand">
+                    <a href="#">
+                        Start Bootstrap
+                    </a>
+                </li>
+                <li>
+                    <a href="#">Dashboard</a>
+                </li>
+                <li>
+                    <a href="#">Shortcuts</a>
+                </li>
+                <li>
+                    <a href="#">Overview</a>
+                </li>
+                <li>
+                    <a href="#">Events</a>
+                </li>
+                <li>
+                    <a href="#">About</a>
+                </li>
+                <li>
+                    <a href="#">Services</a>
+                </li>
+                <li>
+                    <a href="#">Contact</a>
+                </li>
+            </ul>
+        </div>
+        <!-- /#sidebar-wrapper -->
+
+        <!-- Page Content -->
+        <div id="page-content-wrapper">
+            <div class="container-fluid">
+                <div class="jumbotron">
+                    <h1>Ping Pong Pandemonium</h1>
+                    <p>Let's get ready to play. If you're just a newbie scrub click the menu button to learn the rules.</p>
+                    <a href="#menu-toggle" class="btn btn-secondary btn-primary" id="menu-toggle">Toggle Menu</a>
+                </div>
+
+                <div class="input">
+                    <form id="form">
+                        <div class="row center text-center">
+                            <label for="userInput">Enter a number, champ!</label>
+                        </div>
+                        <div class="row center text-center">
+                            <input type="number" id="userInput">
+                        </div>
+                        <div class="row center text-center">
+                            <button type="submit" class="btn btn-danger">Ping My Pong</button>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="output row">
+                    <div class="col col-md-1">
+                    </div>
+                    <div class="col col-md-10">
+                        <h1>Serve!</h1>
+                        <ul id="list"></ul>
+                    </div>
+                    <div class="col col-md-1">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <!-- /#page-content-wrapper -->
+
+    </div>
+    <!-- /#wrapper -->
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/popper/popper.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- Menu Toggle Script -->
+    <script>
+    $("#menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("toggled");
+    });
+    </script>
+
+</body>
+
+</html>
