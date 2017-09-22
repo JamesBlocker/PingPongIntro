@@ -1,129 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet" href="css/bootstrap.css" type="text/css">
+        <link rel="stylesheet" href="css/styles.css" type="text/css">
+        <script src="js/jquery-3.2.1.js"></script>
+        <script src="js/scripts.js"></script>
+        <title>Ping Pong Pandemonium</title>
+    </head>
+    <body>
+        <div id="wrapper">
 
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+            <!-- Sidebar -->
 
-    <title>Ping Pong Pandemonium</title>
-
-    <link rel="stylesheet" href="css/bootstrap.css" type="text/css">
-    <link rel="stylesheet" href="css/styles.css" type="text/css">
-    <script src="js/jquery-3.2.1.js"></script>
-    <script src="js/scripts.js"></script>
-</head>
-
-<body>
-
-    <div id="wrapper">
-
-        <!-- Sidebar -->
-        <div id="sidebar-wrapper">
-            <img id="ping"src="img/ping.png" alt="ping pong paddle">
-            <ul class="sidebar-nav">
-                <li class="sidebar-brand">
-                    <a href="https://en.wikipedia.org/wiki/Fizz_buzz">
-                        Ping Pong > Fizz Buzz
-                    </a>
-                </li>
-                <li>
-                    <a href="#">Epicodus</a>
-                </li>
-                <li>
-                    <a href="#">Github</a>
-                </li>
-                <li>
-                    <a href="https://medium.freecodecamp.org/the-10-most-popular-coding-challenge-websites-of-2016-fb8a5672d22f">More code challenges</a>
-                </li>
-
-                <li id="colorRules">
-                    rules
-                    <ul id="listRules">
-                        <li>Enter A Number</li>
-                        <li>Ping = divisible by 3</li>
-                        <li>Pong = divisible by 5</li>
-                        <li>Ping Pong = divisible by 15</li>
-                    </ul>
-                </li>
-            </ul>
-
-        </div>
-        <!-- /#sidebar-wrapper -->
-
-        <!-- Page Content -->
-        <div id="page-content-wrapper">
-            <div class="container-fluid">
-                <div class="jumbotron">
-                    <h1>Ping Pong Pandemonium</h1>
-                    <p>If you're just a newbie scrub click the menu button to learn the rules.</p>
-                    <a href="#menu-toggle" class="btn btn-secondary btn-danger" id="menu-toggle">Menu</a>
-                </div>
-
-                <img id="inigo"src="img/pong.jpg" alt="Inigo Montoya">
-
-                <div class="input">
-                    <form id="form1">
-                        <div class="row center text-center">
-                            <label for="userInput">Enter a number, champ!</label>
-                        </div>
-                        <div class="row center text-center">
-                            <input type="number" id="userInput">
-                        </div>
-                        <div class="row center text-center">
-                            <button type="submit" class="btn btn-primary">Ping My Pong</button>
-                        </div>
-                    </form>
-
-                    <form id="form2">
-                        <div class="row center text-center">
-                            <label for="userInput2">Whatcha waiting for?!</label>
-                        </div>
-                        <div class="row center text-center">
-                            <input type="number" id="userInput2">
-                        </div>
-                        <div class="row center text-center">
-                            <button type="submit" class="btn btn-danger">Pong My Ping</button>
-                        </div>
-                    </form>
-                </div>
-
-                <div class="output row">
-
-                    <div class="col col-md-2">
-                    </div>
-                        <div class="col col-md-8">
-                            <div class="well">
-                                <img id="inigo2"src="img/ping.png" alt="Inigo Montoya">
-                                <h1>Serve!</h1>
-                                <ul id="list"></ul>
-                            </div>
-                        </div>
-                    <div class="col col-md-2">
-                    </div>
-
-                </div>
-
+            <div id="sidebar-wrapper">
+                <img id="ping"src="img/ping.png" alt="ping pong paddle">
+                <ul class="sidebar-nav">
+                    <li class="sidebar-brand">
+                        <a href="https://en.wikipedia.org/wiki/Fizz_buzz">
+                            Ping Pong > Fizz Buzz
+                        </a>
+                    </li>
+                    <li><a href="https://www.epicodus.com/">Epicodus</a></li>
+                    <li><a href="https://github.com/JamesBlocker/PingPongIntro">Github</a></li>
+                    <li><a href="https://medium.freecodecamp.org/the-10-most-popular-coding-challenge-websites-of-2016-fb8a5672d22f">More code challenges</a></li>
+                    <li id="colorRules">
+                        rules
+                        <ul id="listRules">
+                            <li>Enter A Number</li>
+                            <li>Ping = divisible by 3</li>
+                            <li>Pong = divisible by 5</li>
+                            <li>Ping Pong = divisible by 15</li>
+                        </ul>
+                    </li>
+                </ul>
             </div>
+
+            <!-- Page Content -->
+
+            <div id="page-content-wrapper">
+                <div class="container-fluid">
+                    <div class="jumbotron">
+                        <h1>Ping Pong Pandemonium</h1>
+                        <p>If you're just a newbie scrub click the menu button to learn the rules.</p>
+                        <a href="#menu-toggle" class="btn btn-secondary btn-danger" id="menu-toggle">Menu</a>
+                    </div>
+
+                    <img id="inigo"src="img/pong.jpg" alt="Inigo Montoya">
+
+                    <div class="input">
+                        <form id="form1">
+                            <div class="row center text-center">
+                                <label for="userInput">Enter a number, champ!</label>
+                            </div>
+                            <div class="row center text-center">
+                                <input type="number" id="userInput">
+                            </div>
+                            <div class="row center text-center">
+                                <button type="submit" class="btn btn-primary">Ping My Pong</button>
+                            </div>
+                        </form>
+                        <form id="form2">
+                            <div class="row center text-center">
+                                <label for="userInput2">Whatcha waiting for?!</label>
+                            </div>
+                            <div class="row center text-center">
+                                <input type="number" id="userInput2">
+                            </div>
+                            <div class="row center text-center">
+                                <button type="submit" class="btn btn-danger">Pong My Ping</button>
+                            </div>
+                        </form>
+                    </div>
+
+                    <div class="output row">
+                        <div class="col col-md-2">
+                        </div>
+                            <div class="col col-md-8">
+                                <div class="well">
+                                    <img id="inigo2"src="img/ping.png" alt="Inigo Montoya">
+                                    <h1>Serve!</h1>
+                                    <ul id="list"></ul>
+                                </div>
+                            </div>
+                        <div class="col col-md-2">
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- /#page-content-wrapper -->
+
         </div>
-        <!-- /#page-content-wrapper -->
-
-    </div>
-    <!-- /#wrapper -->
-
-    <!-- Bootstrap core JavaScript -->
-    <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="vendor/popper/popper.min.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
-
-    <!-- Menu Toggle Script -->
-    <script>
-    $("#menu-toggle").click(function(e) {
-        e.preventDefault();
-        $("#wrapper").toggleClass("toggled");
-    });
-    </script>
-
-</body>
-
+    </body>
 </html>

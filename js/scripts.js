@@ -1,4 +1,5 @@
             <!--back end-->
+
 var ping = function(num) {
     for (var i = 1; i <= num; i++) {
         if (i % 15 === 0) {
@@ -29,12 +30,14 @@ var pong = function(num) {
     return num;
 };
 
-
-
-
             <!--front end-->
 
 $(document).ready(function() {
+    $("#menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("toggled");
+    });
+
     $('#form1').submit(function(event) {
         var userInput = $('#userInput').val();
         $('#list').html("");
