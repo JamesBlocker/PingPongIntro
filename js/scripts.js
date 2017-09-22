@@ -23,6 +23,7 @@ $(document).ready(function() {
     $('#form').submit(function(event) {
         var userInput = $('#userInput').val();
         $('#list').html("");
+        $('#pong').fadeOut();
         var result = ping(userInput);
 
         $('.output').show();

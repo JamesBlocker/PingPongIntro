@@ -12,6 +12,7 @@ body {
 
 .jumbotron {
     background-color: grey;
+    padding-bottom: 10px;
 }
 
 .center {
@@ -30,19 +31,25 @@ body {
 }
 
 #colorRules {
-    color: yellow;
+    color: white;
 }
 
 #listRules li{
     list-style: none;
 }
 
-img {
+#ping {
     opacity: 0.25;
     filter: alpha(opacity=525);
     height: 30%;
     width: 85%;
+}
 
+#pong {
+    display: block;
+    margin: auto;
+    width: 20%;
+    padding-bottom: 10px;
 }
 
 #wrapper {
